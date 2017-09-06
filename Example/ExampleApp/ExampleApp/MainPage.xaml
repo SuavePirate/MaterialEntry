@@ -10,9 +10,13 @@
         <Label Text="Welcome to Suave Controls!" 
            VerticalOptions="Center" 
            HorizontalOptions="Center" />
-        <suave:MaterialEntry Placeholder="First Name" AccentColor="Green"/>
-        <suave:MaterialEntry Placeholder="Last Name" AccentColor="Orange"/>
-        <suave:MaterialEntry Placeholder="Email" Keyboard="Email" AccentColor="Red"/>
+        <suave:MaterialEntry Placeholder="First Name" AccentColor="Green" Text="{Binding FirstName}"/>
+        <suave:MaterialEntry Placeholder="Last Name" AccentColor="Orange" Text="{Binding LastName}"/>
+        <suave:MaterialEntry Placeholder="Email" Keyboard="Email" AccentColor="Red" Text="{Binding Email}"/>
+
+        <Label Text="{Binding FirstName}"/>
+        <Label Text="{Binding LastName}"/>
+        <Label Text="{Binding Email}"/>
     </StackLayout>
 
 </ContentPage>

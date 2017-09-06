@@ -12,6 +12,7 @@ namespace ExampleApp
         public MainPage()
         {
             InitializeComponent();
+            BindingContext = new MainPageViewModel();
         }
     }
 }
